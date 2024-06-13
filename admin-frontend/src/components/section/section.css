@@ -1,0 +1,15 @@
+.Section {
+    height: 84px;
+    width: 100%;
+    background-color: #C6BBB4;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Section .title {
+    font-size: 44px;
+    color: #665850;
+}

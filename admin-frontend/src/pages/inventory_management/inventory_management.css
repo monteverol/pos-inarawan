@@ -1,0 +1,74 @@
+.InventoryManagement {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.InventoryManagement .content {
+    width: calc(100% - (100% / 12));
+    height: 100%;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.InventoryManagement .content .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.InventoryManagement .content .header .title {
+    color: #594F44;
+    font-size: 60px;
+}
+
+.InventoryManagement .content .header .actions {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.InventoryManagement .content .header .actions .date {
+    height: 76px;
+    width: 364px;
+    background-color: #FEF9F3;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 1em;
+    gap: 1em;
+}
+
+.InventoryManagement .content .header .actions .date h1 {
+    font-size: 44px;
+    color: #AC9A84;
+}
+
+.InventoryManagement .content .body {
+    height: inherit;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FEF9F3;
+    border-radius: 20px;
+}
+
+.InventoryManagement .content .body .header {
+    height: 96px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 0 2rem;
+    background-color: #AC9A84;
+    border-radius: 20px;
+}
+
+.InventoryManagement .content .body .header h1 {
+    font-size: 40px;
+    color: #FFFFFF;
+}

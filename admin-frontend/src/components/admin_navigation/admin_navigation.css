@@ -1,0 +1,46 @@
+.AdminNavigation {
+    height: 100%;
+    width: 8.33%;
+    background-color: #F4EEE7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    user-select: none;
+}
+
+.AdminNavigation .upper, .AdminNavigation .footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.AdminNavigation .upper img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.AdminNavigation .upper .link, .AdminNavigation .footer .link {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #AC9A84;
+    border-radius: 0.5em;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.AdminNavigation .upper .link.active {
+    background-color: #D15341;
+}
+
+.AdminNavigation .upper .link:hover, .AdminNavigation .footer .link:hover {
+    transform: scale(0.9);
+}
+
+.AdminNavigation .upper .link img, .AdminNavigation .footer .link img {
+    width: 3em;
+}

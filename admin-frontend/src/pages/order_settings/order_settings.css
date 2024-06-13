@@ -1,0 +1,140 @@
+.OrderSettings {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.OrderSettings .wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.OrderSettings .wrapper .content {
+    width: calc(100% - (100% / 12));
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em 2em 2em;
+}
+
+.OrderSettings .wrapper .content .header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2em;
+    height: 10%;
+    align-items: center;
+}
+
+.OrderSettings .wrapper .content .header h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    color: #594F44;
+}
+
+.OrderSettings .wrapper .content .header .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.OrderSettings .wrapper .content .header .buttons button {
+    padding: 0.5em 1em;
+    font-family: "Roboto", sans-serif;
+    font-size: 2em;
+    margin-top: -1em;
+    border: none;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.OrderSettings .wrapper .content .header .buttons button.voucher {
+    background-color: #8C7862;
+    width: 268px;
+}
+
+.OrderSettings .wrapper .content .header .buttons button.voucher:hover {
+    background-color: #675848;
+    width: 280px;
+}
+
+.OrderSettings .wrapper .content .header .buttons button.add-product {
+    background-color: #594F44;
+    width: 420px;
+}
+
+.OrderSettings .wrapper .content .header .buttons button.add-product:hover {
+    background-color: #342e28;
+    width: 440px;
+}
+
+.OrderSettings .wrapper .content .body {
+    width: 100%;
+    height: 90%;
+    background-color: #80726A;
+    border-radius: 16px;
+}
+
+.OrderSettings .wrapper .content .body .group {
+    height: 7.5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 1em;
+}
+
+.OrderSettings .wrapper .content .body .group .group-name {
+    width: 12.5%;
+    height: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background-color: #B6A9A0;
+    display: flex;
+    align-items: center;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.OrderSettings .wrapper .content .body .group .group-name:hover {
+    width: 15%;
+    background-color: #9B9089;
+}
+
+.OrderSettings .wrapper .content .body .group .group-name.active {
+    width: 15%;
+    background-color: #9B9089;
+}
+
+.OrderSettings .wrapper .content .body .group .group-name h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2em;
+    color: #544E4E;
+    transition: 0.1s ease-in-out;
+    font-weight: 700;
+}
+
+.OrderSettings .wrapper .content .body .group .group-name.active h1 {
+    font-weight: bold;
+    color: #FAFAFA;
+}
+
+.OrderSettings .wrapper .content .body .container {
+    height: 92.5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #9B9089;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    overflow-y: scroll;
+    padding: 2em;
+}

@@ -1,0 +1,31 @@
+.MaterialTile {
+    height: 44px;
+    width: 380px;
+    background-color: #E9DCD5;
+    border: 4px solid #BDB3AC;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.MaterialTile h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #706C66;
+}
+
+.MaterialTile h1:nth-child(1) {
+    width: 70%;
+}
+
+.MaterialTile h1:nth-child(2) {
+    width: 20%;
+}
+
+.MaterialTile img {
+    margin-left: 12px;
+}

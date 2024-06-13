@@ -1,0 +1,75 @@
+.BranchPicker {
+    cursor: pointer;
+    position: relative;
+    border-radius: 0.5em;
+}
+
+.BranchPicker:hover {
+    height: auto;
+}
+
+.BranchPicker:hover .bp-header {
+    width: 230px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.BranchPicker:hover .bp-header .icon {
+    transform: rotate(180deg);
+}
+
+.BranchPicker:hover .selection {
+    height: 240px;
+    width: 100%;
+}
+
+.BranchPicker .bp-header.filled {
+    width: 230px;
+}
+
+.BranchPicker .bp-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    transition: 0.3s ease-in-out;
+    width: 200px;
+}
+
+.BranchPicker .bp-header .branch {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.BranchPicker .bp-header .icon {
+    font-size: 1.5em;
+    transition: 0.3s ease-in-out;
+}
+
+.BranchPicker .selection {
+    height: 0px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+.BranchPicker .selection h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2em;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: .5em 1em;
+    width: 100%;
+}
+
+.BranchPicker .selection h1:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}

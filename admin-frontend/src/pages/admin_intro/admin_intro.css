@@ -1,0 +1,91 @@
+.AdminIntro {
+    height: 100vh;
+    width: 100%;
+    padding: 2em 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.AdminIntro .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 15%;
+}
+
+.AdminIntro .header h1 {
+    font-family: "Rubik", sans-serif;
+    font-size: 100px;
+    color: var(--primary);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.AdminIntro .header .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.AdminIntro .header .buttons .button {
+    height: 112px;
+    width: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.1s ease-in-out;
+}
+
+.AdminIntro .header .buttons .button:hover {
+    background-color: rgba(169, 43, 25, 1);
+}
+
+.AdminIntro hr {
+    height: 5px;
+    width: 100%;
+    background-color: var(--primary);
+}
+
+.AdminIntro .navigation {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 4rem;
+    gap: 4rem;
+    height: 75%;
+}
+
+.AdminIntro .navigation .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.AdminIntro .navigation .row .link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    gap: 4rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.AdminIntro .navigation .row .link:hover {
+    transform: scale(1.1);
+}
+
+.AdminIntro .navigation .row .link img {
+    height: 88px;
+    width: 88px;
+}
+
+.AdminIntro .navigation .row .link h1 {
+    font-size: 60px;
+    color: #6B5555;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}

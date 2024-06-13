@@ -1,0 +1,70 @@
+.DatePicker {
+    position: relative;
+}
+
+.DatePicker.active .wrapper {
+    width: 275px;
+}
+
+.DatePicker .wrapper {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+    justify-content: start;
+    /* background-color: #645B51; */
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.DatePicker:hover .wrapper {
+    width: 312px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.DatePicker:hover .date {
+    visibility: visible;
+    width: 312px;
+}
+
+.DatePicker .wrapper img {
+    width: 2em;
+}
+
+.DatePicker .wrapper h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #FAFAFA;
+}
+
+.DatePicker .date {
+    position: absolute;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    overflow: hidden;
+    width: 200px;
+}
+
+.DatePicker .date button, .DatePicker .date th, .DatePicker .date div {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+.DatePicker .date .rdp-button_reset.rdp-button.rdp-day:hover {
+    background-color: #DFD3C4;
+}
+
+.DatePicker .date p {
+    text-align: center;
+}
+
+.DatePicker .date .rdp-day_selected {
+    background-color: var(--primary);
+}

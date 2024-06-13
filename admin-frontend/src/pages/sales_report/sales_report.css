@@ -1,0 +1,208 @@
+.SalesReport {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.SalesReport .content {
+    width: calc(100% - (100% / 12));
+    height: 100%;
+    padding: 2em 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.SalesReport .content .actions {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.SalesReport .content .actions .title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    color: #594F44;
+}
+
+.SalesReport .content .actions .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+/* .SalesReport .content .actions .buttons input[type="date"] {
+    padding: 0 0.5em;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 2em;
+    border: none;
+    border-radius: 0.25em;
+    background-color: #645B51;
+    color: #FFFFFF;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    width: 40%;
+    transition: 0.3s ease-in-out;
+}
+
+.SalesReport .content .actions .buttons input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.SalesReport .content .actions .buttons input[type="date"]:hover {
+    transform: scale(0.95);
+} */
+
+.SalesReport .content .actions .buttons button.swap-view {
+    padding: 0 1em;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    border: none;
+    background-color: #A5917B;
+    border-radius: 0.5em;
+    cursor: pointer;
+    color: #FFFFFF;
+    width: 175px;
+    transition: 0.3s ease-in-out;
+}
+
+.SalesReport .content .actions .buttons button.swap-view:hover {
+    transform: scale(0.95);
+}
+
+.SalesReport .content .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 20%;
+}
+
+.SalesReport .content .header .tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 0;
+    width: 18%;
+    background-color: #B9AB9C;
+    border-radius: 0.5em;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 #877d72;
+}
+
+.SalesReport .content .header .tile h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    color: #63584D;
+    font-weight: bold;
+}
+
+.SalesReport .content .header .tile h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5em;
+    color: #FFF9F2;
+    font-weight: bold;
+}
+
+.SalesReport .content .header .tile h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.SalesReport .content .header .tile h3.up {color: #517351}
+.SalesReport .content .header .tile h3.down {color: #735151}
+
+.SalesReport .content .body {
+    display: flex;
+    flex-direction: column;
+    height: 65%;
+    border-radius: 0.5em;
+    background-color: #B9AB9C;
+    box-shadow: 0 4px 8px 0 #877d72;
+}
+
+.SalesReport .content .body .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 2em;
+    background-color: #CFC3B6;
+    border-radius: 0.5em;
+    width: 100%;
+    height: 12.5%;
+    box-shadow: 0 4px 8px 0 #877d72;
+}
+
+.SalesReport .content .body .header h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #70675E;
+    text-align: center;
+}
+
+.SalesReport .content .body .header h1:nth-child(1) {
+    width: 10%;
+}
+
+.SalesReport .content .body .header h1:nth-child(2) {
+    width: 50%;
+}
+
+.SalesReport .content .body .header h1:nth-child(3),
+.SalesReport .content .body .header h1:nth-child(4) {
+    width: 20%;
+}
+
+.SalesReport .content .body .list {
+    height: 87.5%;
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    overflow-y: scroll;
+    scrollbar-color: var(--primary) #C7BAAC;
+}
+
+.SalesReport .content .body .list .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #EDE5DC;
+    width: 100%;
+    border-radius: 0.5em;
+    padding: 1em 0;
+}
+
+.SalesReport .content .body .list .item h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #70675E;
+    text-align: center;
+}
+
+.SalesReport .content .body .list .item h1:nth-child(1) {
+    width: 10%;
+}
+
+.SalesReport .content .body .list .item h1:nth-child(2) {
+    width: 50%;
+    text-align: start;
+    text-indent: 2em;
+}
+
+.SalesReport .content .body .list .item h1:nth-child(3),
+.SalesReport .content .body .list .item h1:nth-child(4) {
+    width: 20%;
+}

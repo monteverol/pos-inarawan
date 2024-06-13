@@ -1,0 +1,52 @@
+.SystemMaintenance {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.SystemMaintenance .content {
+    height: 100%;
+    width: calc(100% - (100% / 12));
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 4rem;
+}
+
+.SystemMaintenance .content h1 {
+    font-size: 60px;
+    color: #594F44;
+}
+
+.SystemMaintenance .content .links {
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.SystemMaintenance .content .links .link {
+    height: inherit;
+    width: 100%;
+    background-color: #C2B8AC;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    gap: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+.SystemMaintenance .content .links .link:hover {
+    background-color: #b5aba0;
+}
+
+.SystemMaintenance .content .links .link h1 {
+    font-size: 60px;
+    color: #594F44;
+    text-align: center;
+}

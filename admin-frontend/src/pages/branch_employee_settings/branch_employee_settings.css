@@ -1,0 +1,34 @@
+.BranchEmployeeSettings {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.BranchEmployeeSettings .content {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - (100% / 12));
+    height: 100%;
+    padding: 2em 4em;
+}
+
+.BranchEmployeeSettings .content .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10%;
+    align-items: center;
+}
+
+.BranchEmployeeSettings .content .header h1.title {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    color: #594F44;
+}
+
+.BranchEmployeeSettings .content .header .actions {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}

@@ -1,0 +1,22 @@
+.SearchBar {
+    width: 396px;
+    height: 76px;
+    background-color: #FFFFFF;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 2em;
+}
+
+.SearchBar input[type="text"] {
+    width: 100%;
+    border: none;
+    font-size: 36px;
+    color: #8F8F8F;
+    padding: 0 8px;
+    outline: none;
+    border-radius: 40px;
+}

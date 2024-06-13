@@ -1,0 +1,154 @@
+.SalesForecast {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.SalesForecast .content {
+    width: calc(100% - (100% / 12));
+    padding: 2em 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+.SalesForecast .content .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+}
+
+.SalesForecast .content .header .actions {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.SalesForecast .content .header .title {
+    font-family: "Roboto", sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    color: #594F44;
+}
+
+.SalesForecast .content .top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    gap: 2em;
+    height: 30%;
+}
+
+.SalesForecast .content .top .top-1-2, .SalesForecast .content .top .top-3-5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    width: 100%;
+    gap: 2em;
+}
+
+.SalesForecast .content .top .top-1-2 .top-item, .SalesForecast .content .top .top-3-5 .top-item {
+    width: 100%;
+    padding: 2em;
+    background-color: #F8F4EE;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.SalesForecast .content .top .top-1-2 .top-item h1:nth-child(1), .SalesForecast .content .top .top-3-5 .top-item h1:nth-child(1) {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    color: #D15341;
+}
+
+.SalesForecast .content .top .top-1-2 .top-item h1:nth-child(2), .SalesForecast .content .top .top-3-5 .top-item h1:nth-child(2) {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    color: #594F44;
+}
+
+.SalesForecast .content .top-list {
+    height: 50%;
+    width: 100%;
+    background-color: #F8F4EE;
+    border-radius: 0.5em;
+    position: relative;
+}
+
+.SalesForecast .content .top-list .top-list-header {
+    width: 100%;
+    padding: 1em 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 0.5em;
+    background-color: #C7BAAC;
+    height: 15%;
+}
+
+.SalesForecast .content .top-list .top-list-header h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: #70675E;
+    text-align: center;
+}
+
+.SalesForecast .content .top-list .top-list-header h1:nth-child(1),
+.SalesForecast .content .top-list .top-list-items .top-list-item h1:nth-child(1) {
+    width: 10%
+}
+.SalesForecast .content .top-list .top-list-header h1:nth-child(2),
+.SalesForecast .content .top-list .top-list-items .top-list-item h1:nth-child(2) {
+    width: 50%;
+}
+.SalesForecast .content .top-list .top-list-header h1:nth-child(3),
+.SalesForecast .content .top-list .top-list-header h1:nth-child(4),
+.SalesForecast .content .top-list .top-list-items .top-list-item h1:nth-child(3),
+.SalesForecast .content .top-list .top-list-items .top-list-item h1:nth-child(4) {
+    width: 20%;
+}
+
+.SalesForecast .content .top-list .top-list-items {
+    flex-direction: column;
+    height: 80%;
+    overflow-y: scroll;
+}
+
+.SalesForecast .content .top-list .top-list-items .top-list-item {
+    display: flex;
+    flex-direction: row;
+    transition: 0.1s ease-in-out;
+    user-select: none;
+}
+
+.SalesForecast .content .top-list .top-list-items .top-list-item h1 {
+    font-family: "Roboto" ,sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: #70675E;
+    text-align: center;
+    padding: 0.5em 2em;
+    transition: 0.1s ease-in-out;
+}
+
+.SalesForecast .content .top-list .top-list-items .top-list-item:hover {
+    background-color: #9f958a;
+}
+
+.SalesForecast .content .top-list .top-list-items .top-list-item:hover h1 {
+    color: #FAFAFA;
+}
+
+.SalesForecast .content .top-list .top-list-items .top-list-item h1:nth-child(2) {
+    text-align: start;
+    text-indent: 2em;
+}

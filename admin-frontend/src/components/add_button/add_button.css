@@ -1,0 +1,25 @@
+.AddButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 1em 2em;
+    gap: 1em;
+    border-radius: 0.5em;
+    transition: 0.3s ease-in-out;
+}
+
+.AddButton:hover {
+    padding: 1em 3em;
+}
+
+.AddButton img {
+    width: 2.25em;
+}
+
+.AddButton h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #FAFAFA;
+}

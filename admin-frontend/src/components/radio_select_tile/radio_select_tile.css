@@ -1,0 +1,73 @@
+.RadioSelectTile {
+    height: 68px;
+    width: 260px;
+    background-color: #D8CEC8;
+    border: 4px solid #BBABA2;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    gap: 2em;
+}
+
+.RadioSelectTile.selected {
+    background-color: #F3EFED;
+}
+
+.RadioSelectTile .custom-radio {
+    position: relative;
+    width: 22.5px;
+    height: 22.5px;
+}
+
+.RadioSelectTile .custom-radio input[type="radio"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.RadioSelectTile .custom-radio label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #BBABA2; /* Outer circle color */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.RadioSelectTile .custom-radio label::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%; /* Inner circle size relative to the outer circle */
+    height: 70%; /* Inner circle size relative to the outer circle */
+    background-color: #D8CEC8; /* Inner circle color */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s;
+}
+
+.RadioSelectTile .custom-radio input[type="radio"]:checked + label::after {
+    background-color: #BBABA2; /* Color when checked */
+}
+
+.RadioSelectTile .custom-radio input[type="radio"]:checked + label {
+    background-color: #BBABA2;
+}
+
+.RadioSelectTile .custom-radio input[type="radio"]:checked + .RadioSelectTile {
+    background-color: #F3EFED;
+}
+
+.RadioSelectTile .label {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #706C66;
+}

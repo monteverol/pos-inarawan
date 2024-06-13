@@ -1,0 +1,85 @@
+.Variant {
+    width: 200px;
+    height: 100px;
+    border: 4px solid #99877D;
+    background-color: #F4EAE4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.Variant .label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 4px solid #9E4742;
+    background-color: #D8CEC8;
+    border-radius: 16px;
+    width: 200px;
+    height: 51px;
+    margin-top: -4px;
+}
+
+.Variant .label .custom-radio {
+    position: relative;
+    width: 22.5px;
+    height: 22.5px;
+}
+
+.Variant .label .custom-radio input[type="radio"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.Variant .label .custom-radio label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #BBABA2; /* Outer circle color */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.Variant .label .custom-radio label::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%; /* Inner circle size relative to the outer circle */
+    height: 70%; /* Inner circle size relative to the outer circle */
+    background-color: #E1D8D2; /* Inner circle color */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s;
+}
+
+.Variant .label .custom-radio input[type="radio"]:checked + label::after {
+    background-color: #63afe5; /* Color when checked */
+}
+
+.Variant .label .custom-radio input[type="radio"]:checked + label {
+    background-color: #63afe5;
+}
+
+.Variant .label h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #9E4742;
+}
+
+.Variant h1.cost {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #656565;
+    margin-bottom: 6px;
+}

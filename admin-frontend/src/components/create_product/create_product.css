@@ -1,0 +1,326 @@
+.CreateProduct {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CreateProduct .create-product-container {
+    background-color: #C9C2BE;
+    border-radius: 16px;
+    padding: 2em;
+    gap: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.CreateProduct .create-product-container .upper {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.CreateProduct .create-product-container .upper .image {
+    background-color: #F3EFED;
+    width: 292px;
+    height: 259px;
+    border-radius: 16px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.CreateProduct .create-product-container .upper .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.CreateProduct .create-product-container .upper .form .row1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.CreateProduct .create-product-container .upper .form .row1 input[type="text"] {
+    height: 66px;
+    width: 391px;
+    background-color: #D8D3D0;
+    border: 4px solid #99877D;
+    border-radius: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 41px;
+    color: #8E8E8E;
+    padding: 0 0.5em;
+    outline: none;
+    margin-right: 0.5em;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.CreateProduct .create-product-container .upper .form .row1 button {
+    background-color: #AE9A97;
+    border: 4px solid #877B7A;
+    border-radius: 16px;
+    height: 60px;
+    width: 116px;
+    font-family: "Roboto" ,sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #EEE2E2;
+    margin-right: 0.25em;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.CreateProduct .create-product-container .upper .form .row1 button:hover {
+    background-color: #897a77;
+}
+
+.CreateProduct .create-product-container .upper .form .row1 .archive-btn {
+    background-color: #655E5A;
+    border: 4px solid #A3A3A3;
+    height: 60px;
+    width: 100px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.CreateProduct .create-product-container .upper .form .row1 .archive-btn:hover {
+    background-color: #47423f;
+}
+
+.CreateProduct .create-product-container .upper .form .row2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.CreateProduct .create-product-container .upper .form .row2 .category {
+    width: 256px;
+    height: 64px;
+    background-color: #D9C7BE;
+    border-radius: 16px;
+    border: 4px solid #99877D;
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.CreateProduct .create-product-container .upper .form .row2 .category h1 {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #857F77;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.CreateProduct .create-product-container .upper .form .row2 .category span {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CreateProduct .create-product-container .upper .form .row2 .sub-category {
+    width: 419px;
+    height: 64px;
+    background-color: #C2AA9E;
+    border-radius: 16px;
+    border: 4px solid #99877D;
+    padding: 0 1em 0 4em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: -45px;
+    z-index: 1;
+}
+
+.CreateProduct .create-product-container .upper .form .row2 .sub-category h1 {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #857F77;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.CreateProduct .create-product-container .upper .form .row3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.CreateProduct .create-product-container .lower {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.CreateProduct .create-product-container .lower .material-list {
+    height: 336px;
+    width: 408px;
+    background-color: #C4BAB4;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.CreateProduct .create-product-container .lower .material-list .list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: inherit;
+    overflow-y: scroll;
+}
+
+.CreateProduct .create-product-container .lower .material-list .add-material {
+    height: 96px;
+    width: 380px;
+    background-color: #CCC1BB;
+    border: 4px solid #BDB3AC;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+}
+
+.CreateProduct .create-product-container .lower .material-list .add-material button {
+    height: 44px;
+    width: 380px;
+    margin-left: -4px;
+    margin-bottom: -8px;
+    border-radius: 16px;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #9A938A;
+    background-color: #FFF8F4;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.2s ease-in-out
+}
+
+.CreateProduct .create-product-container .lower .material-list .add-material button:hover {
+    background-color: #dad3cf;
+    color: #FFF8F4;
+}
+
+.CreateProduct .create-product-container .lower .material-list .add-material .form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.CreateProduct .create-product-container .lower .material-list .add-material .form select {
+    background-color: #F4EAE4;
+    border: 4px solid #BDB3AC;
+    border-radius: 8px;
+    height: 36px;
+    width: 232px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #9C9C9C;
+    padding: 0 1em;
+    outline: none;
+}
+
+.CreateProduct .create-product-container .lower .material-list .add-material .form input[type="text"] {
+    background-color: #F4EAE4;
+    border: 4px solid #BDB3AC;
+    border-radius: 8px;
+    height: 36px;
+    width: 132px;
+    padding: 0 8px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #9C9C9C;
+    outline: none;
+}
+
+.CreateProduct .create-product-container .lower .add-ons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.CreateProduct .create-product-container .lower .add-ons .list {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.CreateProduct .create-product-container .lower .add-ons .list .col1,
+.CreateProduct .create-product-container .lower .add-ons .list .col2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.CreateProduct .create-product-container .lower .add-ons .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.CreateProduct .create-product-container .lower .add-ons .buttons .return,
+.CreateProduct .create-product-container .lower .add-ons .buttons .confirm {
+    height: 68px;
+    width: 232px;
+    border-radius: 16px;
+    border: 4px solid #B8B8B8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #706C66;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+    transition: 0.2s ease-in-out;
+}
+
+.CreateProduct .create-product-container .lower .add-ons .buttons .return {
+    background-color: #DDD8D6;
+}
+
+.CreateProduct .create-product-container .lower .add-ons .buttons .return:hover {
+    background-color: #ccc6c5;
+}
+
+.CreateProduct .create-product-container .lower .add-ons .buttons .confirm {
+    background-color: #F3EFED;
+}
+
+.CreateProduct .create-product-container .lower .add-ons .buttons .confirm:hover {
+    background-color: #e7e2e0;
+}
